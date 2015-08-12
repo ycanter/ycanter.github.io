@@ -1,0 +1,40 @@
+body{
+	background-color:#eff2f3;
+	font-family: Helvetica, sans-serif;
+	color:##232627;
+	}
+h1 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#Slogan {
+	font-style: italic;
+}
+
+.Block {
+background-color: #dae5e8;
+width: 250px;
+padding: 10px;
+border: dotted;
+margin: auto;
+text-align: center;
+}
+
+#Feature {
+	width: 500px;
+	border: double;
+}
+
+#Search{
+	background-color: #dae5e8;
+	padding-bottom: 5px;
+}
+header{
+	text-align: center;
+}
+
+ul{
+	list-style-type: none;
+	text-align: center;
+}
