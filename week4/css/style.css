@@ -53,6 +53,9 @@ text-align: center;
 	display: inline-block;
 }
 input{
+	font-family: "Raleway," sans-serif;
+	/*i don't think ^^^^ this worked?*/
+	text-transform: uppercase;
 	display: inline-block;
 	width: 220px;
 	/*how to make search bar align with feature when that's in the middle?*/
