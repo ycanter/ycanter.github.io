@@ -1,19 +1,27 @@
+
 body{
 	background-color:#eff2f3;
-	font-family: Helvetica, sans-serif;
+	font-family: 'Merriweather', serif;
+	font-weight: 300;
 	color:##232627;
 	}
-h1 {
-	font-size: 24px;
-	font-weight: bold;
+
+h1 , h3 {
+	font-family: 'Raleway', sans-serif;
 }
+
+h1 {
+	font-size: 26px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+/*how to make title text align with slogan so that the size is responsive?*/
+
 h3{
 	text-decoration: underline;
-	font-weight: lighter;
+	font-weight: 400;
 	/*padding: 0*/
-}
-#Slogan {
-	font-style: italic;
 }
 
 .Block {
@@ -23,6 +31,10 @@ padding: 10px 20px;
 border: dotted;
 margin: 20px auto;
 text-align: center;
+}
+
+#Slogan {
+	font-style: italic;
 }
 
 #Feature {
@@ -35,12 +47,15 @@ text-align: center;
 #Search{
 	background-color: #dae5e8;
 	padding-bottom: 5px;
+
 }
 #Search p{
 	display: inline-block;
 }
 input{
 	display: inline-block;
+	width: 220px;
+	/*how to make search bar align with feature when that's in the middle?*/
 }
 header{
 	text-align: center;
@@ -51,6 +66,7 @@ img{
 	margin: auto;
 }
 li a{
+	font-family: 'Raleway', sans-serif;
 	text-decoration: none;
 	border: 1px solid #000;
 	margin: 10px;
