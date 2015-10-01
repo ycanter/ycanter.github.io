@@ -1,73 +1,14 @@
-
+* { margin:0; padding:0; box-sizing:border-box; }
 body{
 	background-color:#eff2f3;
 	font-family: 'Merriweather', serif;
 	font-weight: 300;
-	color:##232627;
+	color:#232627;
 	font-size: 17px;
-	}
-
-h1 , h3 {
-	font-family: 'Raleway', sans-serif;
 }
-
-h1 {
-	font-size: 1.6em;
-	font-weight: 500;
-	text-transform: uppercase;
+header{
+	text-align: center;
 }
-
-/*how to make title text align with slogan so that the size is responsive?*/
-
-h3{
-	text-decoration: underline;
-	font-weight: 400;
-	/*padding: 0*/
-}
-
-.clearfix:after{
-visibility: hidden;
-display: block;
-font-size: 0;
-content: " ";
-clear:both;
-height: 0;
-}
-
-.Block {
-background-color: #dae5e8;
-width: 250px;
-padding: 10px 20px;
-border: dotted;
-margin: 20px auto;
-text-align: center;
-}
-
-.column1, .column2, .column3 {
-float:left;
-}
-
-
-#Slogan {
-	font-style: italic;
-}
-
-#Feature {
-	width: 40%;
-	border: double;
-}
-#Feature p{
-	text-align: left;
-}
-#Search{
-	background-color: #dae5e8;
-	padding-bottom: 5px;
-
-}
-#Search p{
-	display: inline-block;
-}
-
 input{
 	font-family: "Raleway," sans-serif;
 	/*i don't think ^^^^ this worked?*/
@@ -76,13 +17,12 @@ input{
 	width: 20%;
 	/*how to make search bar align with feature when that's in the middle?*/
 }
-header{
-	text-align: center;
-}
 
 img{
 	display: block;
 	margin: auto;
+	max-width:425px;
+	width:100%;
 }
 li a{
 	font-family: 'Raleway', sans-serif;
@@ -97,6 +37,63 @@ li a{
 ul{
 	list-style: none;
 	padding: 0;
+}
+h1, h2, h3 {
+	font-family: 'Raleway', sans-serif;
+	margin-bottom:.5em;
+}
+
+h1 {
+	font-size: 1.5em;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+/*how to make title text align with slogan so that the size is responsive?*/
+
+h3{
+	text-decoration: underline;
+	font-weight: 400;
+	/*padding: 0*/
+}
+
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear:both;
+	height: 0;
+}
+
+.Block {
+	background-color: #dae5e8;
+	border: dotted;
+	text-align: center;
+}
+.column1, main, .column3 {
+	float:left;
+	width:25%;
+	padding:1em;
+}
+main { width:50%; }
+
+#Slogan {
+	font-style: italic;
+}
+
+#Feature {
+	width: 40%;
+	border: double;
+}
+#Feature p{
+	text-align: left;
+}
+#Search{
+	background-color: #dae5e8;
+}
+#Search p{
+	display: inline-block;
 }
 
 @media only and screen (max-width: 800px) {
