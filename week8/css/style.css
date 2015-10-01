@@ -105,4 +105,8 @@ ul{
 
 @media only and screen (max-width: 400px) {
 /*need to undo floats, keep the input centered at the top, */
+	body{
+		font-size: 18px;
+	}
+	/*make search bar bigger for fingers*/
 }
