@@ -12,8 +12,9 @@ header{
 input{
 	font-family: "Raleway," sans-serif;
 	text-transform: uppercase;
-	display: inline-block;
-	width: 25%;
+	display: block;
+	float:left;
+/*	width: 25%;*/
 	padding: .5em;
 	/*how to make search bar align with feature when that's in the middle?*/
 }
@@ -45,12 +46,14 @@ h1, h2, h3 {
 	font-family: 'Raleway', sans-serif;
 	margin-bottom:.5em;
 	font-weight: lighter;
+	padding: .5em;
 }
 
 h1 {
 	font-size: 1.5em;
 	font-weight: 500;
 	text-transform: uppercase;
+	margin:0;
 }
 
 /*how to make title text align with slogan so that the size is responsive?*/
@@ -58,7 +61,7 @@ h1 {
 h2{
 	text-decoration: underline;
 	font-weight: 400;
-	/*padding: 0*/
+	text-align: center;
 }
 
 .clearfix:after{
@@ -76,7 +79,7 @@ h2{
 	text-align: center;
 	margin: .5em;
 }
-.column1, main, .column3 {
+.column1, .column3 {
 	float:left;
 	width:25%;
 	padding:.25em;
@@ -84,6 +87,7 @@ h2{
 
 main {
 	width: 50%;
+	float:left;
 }
 
 #Slogan {
@@ -92,6 +96,7 @@ main {
 
 #Feature {
 	padding: .5em;
+
 }
 #Feature p{
 	text-align: left;
@@ -99,18 +104,61 @@ main {
 #Search{
 	background-color: #dae5e8;
 	padding: 1em;
+/*	width:33%;
+	margin:auto;*/
+}
+
+#search-wrap{
+	width:50%;
+	margin:auto;
 }
 #Search p{
-	display: inline-block;
+	display: block;
+	float:left;
+	line-height: 28px;
 }
 
-@media only and screen (max-width: 800px) {
-
-}
-
-@media only and screen (max-width: 400px) {
-/*need to undo floats, keep the input centered at the top, */
+@media screen and (max-width: 800px) {
 	body{
 		font-size: 18px;
+		line-height: 1.75em;
+	}
+
+	.column1 {
+	float:left;
+	width:35%;
+	padding:.15em;
+	}
+
+	main{
+	width: 65%;
+	}
+
+	.column3{
+	width: 100%;
+	float:none;
+	}
+}
+
+@media screen and (max-width: 400px) {
+/*need to move about and submissions form, put calendar at top under search*/
+	body{
+		font-size: 18px;
+	}
+
+	.column1, .column3 {
+	float:none;
+	width:100%;
+	padding: 1em;
+	}
+
+	main {
+	width: 100%;
+	float:none;
+	}
+
+	#Search input{
+		width:100%;
+		float: none;
 	}
 }
